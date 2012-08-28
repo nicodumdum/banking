@@ -126,3 +126,4 @@ OpenLayers.Format.WMSCapabilities.v1_3 = OpenLayers.Class(
     CLASS_NAME: "OpenLayers.Format.WMSCapabilities.v1_3" 
 
 });
+>>>>>>> 5c0e5cbfa75b2a5e6c610d51623982b9180acd44
