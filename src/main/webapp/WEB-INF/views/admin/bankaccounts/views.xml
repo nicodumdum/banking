@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="admin/bankaccounts/index" extends="admin_default_layout">
+		<put-attribute name="body" value="/WEB-INF/views/admin/bankaccounts/index.jsp" />
+	</definition>
+	<definition name="admin/bankaccounts/show" extends="admin_default_layout">
+		<put-attribute name="body" value="/WEB-INF/views/admin/bankaccounts/show.jsp" />
+	</definition>
+	<definition name="admin/bankaccounts/create" extends="admin_default_layout">
+		<put-attribute name="body" value="/WEB-INF/views/admin/bankaccounts/create.jsp" />
+	</definition>
+</tiles-definitions>
