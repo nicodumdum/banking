@@ -15,8 +15,10 @@
 			<input type="radio" name="isActive" value= 1  /> Active     
 			<input type="radio" name="isActive" value= 0 /> Inactive</td>
 		</tr>
-		<label>Account Owner:</label>
-		<form:select path="customer" items="${customers}" itemLabel="name" itemValue="id"/><br/>
+		<tr>
+			<td>Account Owner:</td>
+			<form:select path="customer" items="${customers}" itemLabel="name" itemValue="id"/><br/>
+		</tr>
 		<tr>
 			<td>Current Balance:</br>
 			<form:input path="currentBalance"/></td>

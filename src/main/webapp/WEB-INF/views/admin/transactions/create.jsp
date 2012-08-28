@@ -3,37 +3,24 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 
-<form:form action="/admin/customers/save" method="POST" modelAttribute="customer" enctype="multipart/form-data">
-<h1>Create New Customer</h1></br>
+<form:form action="/admin/transactions/save" method="POST" modelAttribute="transaction" enctype="multipart/form-data">
+<h1>Create New Transaction</h1></br>
 	<table>
 		<tr>
-			<td>First Name:</br>
-			<form:input path="firstName"/></td>
+			<td>Bank Account:</td>
+			<form:select path="account" items="${bankaccounts}" itemLabel="name" itemValue="id"/><br/>
 		</tr>
 		<tr>
-			<td>Last Name:</br>
-			<form:input path="lastName"/></td>
+			<td>Date:</br>
+			<form:input path="transactionDate"/></td>
 		</tr>
 		<tr>
-			<td>Address:</br>
-			<form:textarea path="address"/></td>
+			<td>Amount</br>
+			<form:input path="amount"/></td>
 		</tr>
 		<tr>
-			<td>Birth Date</br>
-			<form:input path="birthDate"/></td>
-		</tr>
-		<tr>
-			<td>Email Address:</br>
-			<form:input path="email"/></td>
-		</tr>
-		<tr>
-			<td>Contact Number:</br>
-			<form:input path="contactNumber"/></td>
-		</tr>
-		<tr>
-			<td>Gender:</br>
-			<input type="radio" name="gender" value="Male" /> Male     
-			<input type="radio" name="gender" value="Female" /> Female</td>
+			<td>Transaction Type:</br>
+			<form:input path="transactionType"/></td>
 		</tr>
 	</table>
 	<input type="submit" value="Submit"/>
