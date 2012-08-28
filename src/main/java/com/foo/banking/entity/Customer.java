@@ -83,7 +83,6 @@ public class Customer
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-
 	@Transient
 	private String name;
 	public String getName() {
