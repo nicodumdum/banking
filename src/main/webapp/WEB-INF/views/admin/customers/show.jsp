@@ -6,15 +6,6 @@
 <h2>Full Name</h2>
 <div>${customer.name}</div>
 
-<h2>Email Address</h2>
-<div>${customer.email}</div>
-
-<h2>Address</h2>
-<div>${customer.address}</div>
-
-<h2>Contact Number</h2>
-<div>${customer.contactNumber}</div>
-
 <h2>Birth Date</h2>
 <div>${customer.birthDate}</div>
 

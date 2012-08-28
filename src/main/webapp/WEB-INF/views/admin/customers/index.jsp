@@ -4,12 +4,6 @@
 <h1>Customer List</h1>
 
 <table class="data_grid display">
-	<thead>
-		<tr>
-			<th>Customers</th>
-			<th>Stuff To Do</th>
-		</tr>
-	</thead>
 	<c:forEach items="${customers}" var="customer">
 	<tr>
 		<td>${customer.name}</td>

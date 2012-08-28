@@ -4,17 +4,11 @@
 <h1>Customer List</h1>
 
 <table class="data_grid display">
-	<thead>
-		<tr>
-			<th>Customers</th>
-			<th>Stuff To Do</th>
-		</tr>
-	</thead>
-	<c:forEach items="${customers}" var="customer">
+	<c:forEach items="${transactions}" var="transaction">
 	<tr>
-		<td>${customer.name}</td>
+		<td>${transaction.name}</td>
 		<td>
-			<a href="/admin/customers/${customer.id}">Show</a>
+			<a href="/admin/customers/${transaction.id}">Show</a>
 		</td>
 	</tr>
 	</c:forEach>

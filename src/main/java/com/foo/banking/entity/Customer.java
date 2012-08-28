@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity(name="customer")
 public class Customer 
@@ -86,7 +87,7 @@ public class Customer
 	@Transient
 	private String name;
 	public String getName() {
-		return lastName + ", " + firstName;
+		return lastName + ", " + firstName + " " + middleName;
 	}
 	
 	public String toString() {

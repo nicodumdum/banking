@@ -11,24 +11,16 @@
 			<form:input path="firstName"/></td>
 		</tr>
 		<tr>
-			<td>Last Name:</br>
-			<form:input path="lastName"/></td>
+			<td>Middle Name:</br>
+			<form:input path="middleName"/></td>
 		</tr>
 		<tr>
-			<td>Address:</br>
-			<form:textarea path="address"/></td>
+			<td>Last Name:</br>
+			<form:textarea path="lastName"/></td>
 		</tr>
 		<tr>
 			<td>Birth Date</br>
 			<form:input path="birthDate"/></td>
-		</tr>
-		<tr>
-			<td>Email Address:</br>
-			<form:input path="email"/></td>
-		</tr>
-		<tr>
-			<td>Contact Number:</br>
-			<form:input path="contactNumber"/></td>
 		</tr>
 		<tr>
 			<td>Gender:</br>
